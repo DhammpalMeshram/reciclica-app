@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title class="font-md">Pickup Call</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true"> 
+  <img src="assets/images/google-map.png" alt="Google Map" />
+
+  <ion-card>
+    <ion-card-content>
+      <p>Address: fake street, 112</p>
+      <p>complement: Apto 774</p>
+      <p>Neighborhood: Neighborhood</p>
+      <p>Zip code: 123456</p>
+      <p>City name : state</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list>
+    <ion-item lines="inset">
+      <ion-textarea label="Note" labelPlacement="floating" placeholder="Note..."  [autoGrow]="true"></ion-textarea>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="btn btn-brand" size="full">Create pickup call</ion-button>
+
+</ion-content>
