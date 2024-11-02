@@ -46,8 +46,27 @@
     height: 100%;
 }
 
+.font-md {
+    font-size: $size-medium;
+}
+
+.font-lg {
+    font-size: $size-large;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .btn {
     border-radius: $radius;
+    font-size: calc($size-base + 2px);
+    font-weight: 500;
+
+    &.font-sm {
+        font-size: calc($size-base);
+    }
+    
     &.btn-brand {
         --background: $color-brand-primary ;
         --background-activated: $color-brand-primary;
@@ -66,6 +85,9 @@
     &.btn-text-brand {
         color: $color-brand-primary;
     }
+    &.btn-text-gray {
+        color: $black-200;
+    }
     &.btn-white {
         --background: $white ;
         --background-activated: $white;
@@ -73,5 +95,12 @@
         --background-hover: $white;
         background: $white;
         color: $color-brand-primary;
+    }
+}
+
+ion-card {
+    ion-card-header {
+        ion-card-title {
+        }
     }
 }

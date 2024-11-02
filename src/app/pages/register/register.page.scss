@@ -1,36 +1,49 @@
 @import '../../../theme/variables.scss';
 
 ion-header ion-toolbar {
-    --background: $color-brand-primary;
-    background: $color-brand-primary;
+    --background: #{$color-brand-primary};
+    --opacity: 1;
     color: $white;
+    padding: $padding;
 }
 
 ion-content.register-wrapper {
-    --background: $color-brand-primary;
-    background: $color-brand-primary;
+    --background: #{$color-brand-primary};
 
     ion-card {
-        margin: 15px;
-        ion-card-title {
-            font-size: 22px;
+        margin: $margin;
+
+        ion-card-header {
+            ion-card-title {
+                font-size: $size-medium;
+            }
+        }
+
+        ion-item {
+            --padding-start: 0px;
+        }
+
+        ion-card-content.input-wrapper {
+            ion-item:not(:last-child) {
+                margin-bottom: $margin-sm;
+            }
         }
     }
 
     ion-radio {
-        --border-radius: 4px;
-        --inner-border-radius: 4px;
+        --border-radius: #{$radius-small};
+        --inner-border-radius: #{$radius-small};
     
-        --color: #ddd;
+        --color: #{$gray-100};
         --color-checked: #{$color-brand-primary};
     }
     
     ion-radio.ios::part(container) {
-        width: 20px;
-        height: 20px;
+        width: $size-base-medium;
+        height: $size-base-medium;
     
-        border: 2px solid #ddd;
-        border-radius: 4px;
+        border: 2px solid #{$gray-100};
+        border-radius: $radius-small;
     }
     
     .radio-checked.ios::part(container) {
@@ -38,7 +51,6 @@ ion-content.register-wrapper {
     }
     
     .btn-white {
-        margin: 15px;
+        margin: $margin;
     }
 }
-

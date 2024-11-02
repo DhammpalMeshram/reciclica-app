@@ -1,9 +1,10 @@
 @import '../../../theme/variables.scss';
 
 ion-header ion-toolbar {
-    --background: $color-brand-primary;
-    background: $color-brand-primary;
+    --background: #{$color-brand-primary};
+    --opacity: 1;
     color: $white;
+    padding: $padding;
 
     ion-menu-button {
         color: $white;
@@ -17,13 +18,12 @@ ion-content.home-wrapper {
         box-shadow: 0 1px 2px 1px rgb(0 0 0 / 20%);
 
         ion-item {
-            background: $color-brand-primary;
-            --background: $color-brand-primary;
-            padding: 10px;
+            --background: #{$color-brand-primary};
+            padding: $padding;
             color: $white;
 
             ion-avatar {
-                margin-right: 15px;
+                margin-right: $margin;
             }
 
             ion-label {
@@ -31,6 +31,7 @@ ion-content.home-wrapper {
 
                 p {
                     color: inherit;
+                    font-size: $size-base;
                 }
 
                 .money {
@@ -47,6 +48,20 @@ ion-content.home-wrapper {
             color: $black;
             text-transform: uppercase;
             font-size: $size-base;
+        }
+        ion-card-content {
+            padding-bottom: 0px;
+
+            ion-item {
+                p {
+                    font-size: calc($size-base - 1px);
+                    line-height: $size-base-medium;
+
+                    &:not(:last-child) {
+                        margin-bottom: $margin-sm;
+                    }
+                }
+            }
         }
     }
 
