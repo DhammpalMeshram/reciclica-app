@@ -3,3 +3,5 @@ Then initiate the ionic app : ionic start (app name) (template name)
 The command i used is : ionic start reciclica-app sidemenu
 
 Then i went github and i created the new project named Ryciclica app
+
+Create the boot screen : ionic generate page pages/boot-screen

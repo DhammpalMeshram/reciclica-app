@@ -4,12 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: 'boot-screen',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'boot-screen',
+    loadChildren: () => import('./pages/boot-screen/boot-screen.module').then( m => m.BootScreenPageModule)
   }
 ];
 
