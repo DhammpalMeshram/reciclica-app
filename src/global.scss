@@ -64,6 +64,14 @@
         background: transparent;
     }
     &.btn-text-brand {
-        color: $color-brand-primary
+        color: $color-brand-primary;
+    }
+    &.btn-white {
+        --background: $white ;
+        --background-activated: $white;
+        --background-focused: $white;
+        --background-hover: $white;
+        background: $white;
+        color: $color-brand-primary;
     }
 }

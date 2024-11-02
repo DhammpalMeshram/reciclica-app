@@ -1,0 +1,45 @@
+@import '../../../theme/variables.scss';
+
+ion-header ion-toolbar {
+    --background: $color-brand-primary;
+    background: $color-brand-primary;
+    color: $white;
+}
+
+ion-content.register-wrapper {
+    --background: $color-brand-primary;
+    background: $color-brand-primary;
+
+    ion-card {
+        margin: 15px;
+        ion-card-title {
+            font-size: 22px;
+        }
+    }
+
+    ion-radio {
+        --border-radius: 4px;
+        --inner-border-radius: 4px;
+    
+        --color: #ddd;
+        // --color-checked: $color-brand-primary;
+        --color-checked: #2dd55b;
+    }
+    
+    ion-radio.ios::part(container) {
+        width: 20px;
+        height: 20px;
+    
+        border: 2px solid #ddd;
+        border-radius: 4px;
+    }
+    
+    .radio-checked.ios::part(container) {
+        border-color: $color-brand-primary;
+    }
+    
+    .btn-white {
+        margin: 15px;
+    }
+}
+
