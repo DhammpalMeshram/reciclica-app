@@ -35,3 +35,35 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+
+@import './theme/variables.scss';
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.btn {
+    border-radius: $radius;
+    &.btn-brand {
+        --background: $color-brand-primary ;
+        --background-activated: $color-brand-primary;
+        --background-focused: $color-brand-primary;
+        --background-hover: $color-brand-primary;
+        background: $color-brand-primary;
+        color: $white;
+    }
+    &.btn-bg-none {
+        --background: transparent ;
+        --background-activated: transparent;
+        --background-focused: transparent;
+        --background-hover: transparent;
+        background: transparent;
+    }
+    &.btn-text-brand {
+        color: $color-brand-primary
+    }
+}
