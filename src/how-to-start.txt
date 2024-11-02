@@ -1,0 +1,5 @@
+Install the global ionic cli : npm install -g @ionic/cli
+Then initiate the ionic app : ionic start (app name) (template name)
+The command i used is : ionic start reciclica-app sidemenu
+
+Then i went github and i created the new project named Ryciclica app
