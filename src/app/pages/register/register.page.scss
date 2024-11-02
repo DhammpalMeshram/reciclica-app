@@ -22,8 +22,7 @@ ion-content.register-wrapper {
         --inner-border-radius: 4px;
     
         --color: #ddd;
-        // --color-checked: $color-brand-primary;
-        --color-checked: #2dd55b;
+        --color-checked: #{$color-brand-primary};
     }
     
     ion-radio.ios::part(container) {

@@ -1,0 +1,62 @@
+@import '../../../theme/variables.scss';
+
+ion-header ion-toolbar {
+    --background: $color-brand-primary;
+    background: $color-brand-primary;
+    color: $white;
+
+    ion-menu-button {
+        color: $white;
+    }
+}
+
+ion-content.home-wrapper {
+    ion-list {
+        padding: 0;
+        background: $color-brand-primary;
+        box-shadow: 0 1px 2px 1px rgb(0 0 0 / 20%);
+
+        ion-item {
+            background: $color-brand-primary;
+            --background: $color-brand-primary;
+            padding: 10px;
+            color: $white;
+
+            ion-avatar {
+                margin-right: 15px;
+            }
+
+            ion-label {
+                color: $white;
+
+                p {
+                    color: inherit;
+                }
+
+                .money {
+                    font-weight: bold;
+                    color: inherit;
+                }
+            }
+        }
+    }
+    
+    ion-card {
+        color: $black;
+        ion-card-subtitle {
+            color: $black;
+            text-transform: uppercase;
+            font-size: $size-base;
+        }
+    }
+
+    ion-fab {
+        ion-fab-button {
+            --background: #{$color-brand-primary} ;
+            --background-activated: #{$color-brand-primary};
+            --background-focused: #{$color-brand-primary};
+            --background-hover: #{$color-brand-primary};
+            color: $white;
+        }
+    }
+}
