@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'boot-screen',
     loadChildren: () => import('./pages/boot-screen/boot-screen.module').then( m => m.BootScreenPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   }
 ];
 
