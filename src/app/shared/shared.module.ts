@@ -1,15 +1,16 @@
 import { NgModule , CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PickupCallCardComponent } from '../components/pickup-call-card/pickup-call-card.component';
 import { RouterModule } from '@angular/router';
+import { PickupCallCardComponent } from '../components/pickup-call-card/pickup-call-card.component';
+import { HeaderComponent } from '../components/header/header.component';
 
 @NgModule({
-  declarations: [PickupCallCardComponent],
+  declarations: [HeaderComponent, PickupCallCardComponent],
   imports: [
     CommonModule,
     RouterModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  exports: [PickupCallCardComponent],
+  exports: [HeaderComponent, PickupCallCardComponent],
 })
 export class SharedModule { }

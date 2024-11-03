@@ -1,0 +1,19 @@
+@import '../../../theme/variables.scss';
+
+ion-header ion-toolbar {
+    --background: #{$color-brand-primary};
+    --opacity: 1;
+    color: $white;
+    padding: $padding;
+
+    ion-menu-button {
+        color: $white;
+    }
+
+    ion-buttons.backBtn {
+        ion-button {
+            --color: #{$white};
+        }
+    }
+
+}

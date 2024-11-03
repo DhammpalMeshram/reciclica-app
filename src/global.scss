@@ -74,6 +74,7 @@
 .btn {
     font-size: calc($size-base + 2px);
     font-weight: 500;
+    border-radius: $radius;
 
     &.font-sm {
         font-size: calc($size-base);
