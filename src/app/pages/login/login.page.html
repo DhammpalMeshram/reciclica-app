@@ -18,10 +18,8 @@
             ></ion-input>
           </ion-item>
 
-          <ion-text class="error-text" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
-            <p *ngIf="loginForm.get('email')?.errors?.['required']">Email is required.</p>
-            <p *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email format.</p>
-          </ion-text>
+          <app-error-msg [field]="loginForm.get('email')" [message]="'Email is required.'" [error]="'required'"></app-error-msg>
+          <app-error-msg [field]="loginForm.get('email')" [message]="'Invalid email format.'" [error]="'email'"></app-error-msg>
   
           <ion-item>
             <ion-input 
@@ -33,9 +31,7 @@
             ></ion-input>
           </ion-item>
 
-          <ion-text class="error-text" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
-            <p *ngIf="loginForm.get('password')?.errors?.['required']">Password is required.</p>
-          </ion-text>
+          <app-error-msg [field]="loginForm.get('password')" [message]="'Password is required.'" [error]="'required'"></app-error-msg>
          
         </form>
 
