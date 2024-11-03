@@ -11,29 +11,4 @@ ion-header ion-toolbar {
     }
 }
 
-ion-content {
-    ion-card {
-        color: $black;
-        margin: $margin-sm;
-        
-        ion-card-subtitle {
-            color: $black;
-            text-transform: uppercase;
-            font-size: $size-base;
-        }
-        ion-card-content {
-            ion-item {
-                --padding-start: 0px;
-                --padding-end: 0px;
-                p {
-                    font-size: calc($size-base - 1px);
-                    line-height: $size-base-medium;
-
-                    &:not(:last-child) {
-                        margin-bottom: $margin-sm;
-                    }
-                }
-            }
-        }
-    }
-}
+ion-content {}

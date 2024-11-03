@@ -57,9 +57,21 @@
 .text-center {
     text-align: center;
 }
+.text-brand {
+    color: $color-brand-primary;
+}
+
+.pb-0 {
+    padding-bottom: 0px;
+}
+.pb-12 {
+    padding-bottom: 12px;
+}
+.m-0 {
+    margin: 0px;
+}
 
 .btn {
-    border-radius: $radius;
     font-size: calc($size-base + 2px);
     font-weight: 500;
 
