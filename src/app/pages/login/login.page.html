@@ -7,16 +7,40 @@
 
       <ion-card-content>
 
-        <ion-item>
-          <ion-input type="email" label="Email" labelPlacement="floating" placeholder="Email address"></ion-input>
-        </ion-item>
+        <form [formGroup]="loginForm">
+          <ion-item>
+            <ion-input 
+              type="email" 
+              label="Email" 
+              labelPlacement="floating" 
+              placeholder="Email address"
+              formControlName="email"
+            ></ion-input>
+          </ion-item>
 
-        <ion-item>
-          <ion-input type="password" label="Password" labelPlacement="floating" placeholder="Password"></ion-input>
-        </ion-item>
+          <ion-text class="error-text" *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+            <p *ngIf="loginForm.get('email')?.errors?.['required']">Email is required.</p>
+            <p *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email format.</p>
+          </ion-text>
+  
+          <ion-item>
+            <ion-input 
+              type="password" 
+              label="Password" 
+              labelPlacement="floating" 
+              placeholder="Password"
+              formControlName="password"
+            ></ion-input>
+          </ion-item>
+
+          <ion-text class="error-text" *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+            <p *ngIf="loginForm.get('password')?.errors?.['required']">Password is required.</p>
+          </ion-text>
+         
+        </form>
 
         <ion-button class="btn btn-bg-none btn-text-gray font-sm" fill="clear" size="full">Forgot email / password</ion-button>
-        <ion-button (click)="login()" class="btn btn-brand" size="full">Login</ion-button>
+        <ion-button (click)="login()" class="btn btn-brand" size="full" [disabled]="!loginForm.valid">Login</ion-button>
         <ion-button routerLink="/register" class="btn btn-bg-none btn-text-brand" size="full">Register</ion-button>
 
       </ion-card-content>
