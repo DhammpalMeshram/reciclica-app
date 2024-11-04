@@ -37,7 +37,7 @@ export class LoginPage implements OnInit {
     if (this.loginForm.valid) {
       console.log('Form Submitted', this.loginForm.value);
       this.router.navigate(['home']);
-      this.store.dispatch(hide());
+      // this.store.dispatch(hide());
 
     } else {
       console.log('Form is invalid');

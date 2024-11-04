@@ -1,6 +1,14 @@
+@import '../../../theme/variables.scss';
+
 .backdrop {
     position: fixed;
     height: 100%;
     width: 100%;
     background: rgb( 0,0,0, 0.5);
+
+    ion-spinner {
+        --color: #{$color-brand-primary};
+        width: 40px;
+        height: 40px;
+    }
 }

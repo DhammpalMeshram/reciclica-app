@@ -1,0 +1,7 @@
+@import '../../../theme/variables.scss';
+
+ion-spinner {
+    --color: #{$color-brand-primary};
+    width: 40px;
+    height: 40px;
+}
