@@ -6,5 +6,9 @@ Then i went github and i created the new project named Ryciclica app
 
 Create the boot screen : ionic generate page pages/boot-screen
 
+Create the component : ionic generate component components/loader
+
 Ionic app start at : localhost:8100
+
+Install the ngrx :: npm install @ngrx/store --save
 
