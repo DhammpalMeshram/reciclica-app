@@ -12,3 +12,5 @@ Ionic app start at : localhost:8100
 
 Install the ngrx :: npm install @ngrx/store --save
 
+Generate service in ionic:  ionic g service services/auth/auth
+
