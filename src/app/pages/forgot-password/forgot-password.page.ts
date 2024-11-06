@@ -73,6 +73,7 @@ export class ForgotPasswordPage implements OnInit {
           });
           await toast.present();
           this.store.dispatch(hide());
+          this.router.navigate(['/login']);
         },
         async (error) => {
           const toast = await this.toastController.create({
